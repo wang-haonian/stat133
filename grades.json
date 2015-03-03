@@ -1,0 +1,23 @@
+{
+    "email": "whn@berkeley.edu", 
+    "github_name": "wang-haonian", 
+    "grades": {
+        "hw1": {
+            "note": "", 
+            "hash": "9b70fea9e696ee8787e4d249761900bc9d7006d5", 
+            "earned": 16, 
+            "possible": 20, 
+            "penalty": 0, 
+            "parts": {
+                "hw1": {
+                    "possible": 20, 
+                    "earned": 16
+                }
+            }
+        }
+    }, 
+    "login": "wang-haonian", 
+    "name": "wang_haonian", 
+    "status": "enrolled", 
+    "url": "git@github.com:wang-haonian/stat133.git"
+}
