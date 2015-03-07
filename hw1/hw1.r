@@ -87,7 +87,7 @@ family.men<-family[family$gender=="m",]
 # Create a new data frame 
 # << family.young >> : a data frame, subset of family, with only people *under* 40
 family[family$agd<40,]
-family.yong<-family[family$age<40,]
+family.young<-family[family$age<40,]
 # Create a new data frame 
 # << family.30y68i >> : a data frame, subset of family, with only people *over* 30, *shorter* than 68 in
 family[family$age>30 &family$height<68,]
