@@ -19,5 +19,6 @@
     "login": "wang-haonian", 
     "name": "wang_haonian", 
     "status": "enrolled", 
-    "url": "git@github.com:wang-haonian/stat133.git"
+    "url": "git@github.com:wang-haonian/stat133.git", 
+    "section": "lab5"
 }
