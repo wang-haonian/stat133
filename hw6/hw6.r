@@ -28,8 +28,21 @@
 #                 non-adopter, else 1 (so once a row turns to 1 it stays as 1).
 
 sim.doctors <- function(initial.doctors, n.doctors, n.days, p){
+  
+  m<- matrix(rep(initial.doctors, times=n.days), ncol= n.days)
+for (i in 2:n.days){
+ pair = sample(1: n.doctors, size=2)
+ if(m[pair[1], i] != m[pair[2],i]){
+   m.i = m[pair,i]
+   m.i[m.i == 0] = sample(0:1, size = 1, prob = c(1-p, p))
+   m[pair,i:n.days] = m.i
+ } 
+ }
+return(m)
+}
+ 
 
-  # Set up the output variable, define it as a matrix then use initial.doctors
+ # Set up the output variable, define it as a matrix then use initial.doctors
   # to set the first column (day)
 
   # Run a simulation for <n.days> (use a for loop).  In the loop:
@@ -39,12 +52,31 @@ sim.doctors <- function(initial.doctors, n.doctors, n.days, p){
 
   # return the output
 
-}
+
 
 # When you test your function you have to generate <initial.doctors> and
 # pick values for the other input parameters.
 
 set.seed(42)
+n.doctors<- 100
+initial.doctors = sample(0:1,size = n.doctors, prob = c(0.9,0.1), replace = T)
+
+m1=sim.doctors(initial.doctors,n.days = 500, n.doctors = n.doctors, p=0.5)
+m2=sim.doctors(initial.doctors,n.days = 500, n.doctors = n.doctors, p=0.6)
+m3=sim.doctors(initial.doctors,n.days = 500, n.doctors = n.doctors, p=0.7)
+m4=sim.doctors(initial.doctors,n.days = 500, n.doctors = n.doctors, p=0.8)
+m5=sim.doctors(initial.doctors,n.days = 500, n.doctors = n.doctors, p=0.9)
+
+
+
+plot(x=c(1:500),y=colSums(m1),xlab="days", ylab="Number of doctors",type = 'l',col="red")
+lines(x=c(1:500), y=colSums(m2),col="black")
+lines(x=c(1:500),y=colSums(m3), col="blue")
+lines(x=c(1:500),y=colSums(m4), col="grey")
+lines(x=c(1:500),y=colSums(m5), col="yellow")
+legend("bottomright", legend=c("p=0.5","p=0.6","p=0.7","p=0.8","p=0.9"), 
+        fill=c("red", "black","blue","grey","yellow"))
+
 # Generate a value for <initial.doctors> that has 10% 1s and 90% 0s.
 # Run your function for at least 5 different values of <p> and plot
 # on x-axis: days,
