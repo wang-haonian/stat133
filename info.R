@@ -1,0 +1,5 @@
+name = "wang_haonian"
+SID = "25483384"
+email = "whn@berkeley.edu"
+github_name = "wang-haonian"
+status = "enrolled"
