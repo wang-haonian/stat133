@@ -98,11 +98,19 @@ family.30y68i<-family[family$age>30 & family$height<68,]
 # Create a new variable 
 # << bmi >> : a vector with the BMI of each family member 
 bmi<-(family$weight)/(family$height)^2*703
+<<<<<<< HEAD
 
 
 # Create a new data frame
 # << family2 >> : family with an added column of BMI, with column name bmi
 family2 <- data.frame(family,bmi)
+=======
+family[,"bmi"]<- "bmi"
+
+# Create a new data frame
+# << family2 >> : family with an added column of BMI, with column name bmi
+family2 <- family
+>>>>>>> origin/master
 
 
 

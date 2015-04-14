@@ -225,7 +225,11 @@ symbols(log(SO2012Ctry$pop), log(SO2012Ctry$GDP_per_person), circle=sqrt(SO2012C
 # plotting character.
 
 # your plotting code here
+<<<<<<< HEAD
 with(SO2012Ctry[SO2012Ctry$Total > 0,], symbols(log(pop), log(GDP_per_person), circles = sqrt(Total)/36, inche = FALSE)
+=======
+with(SO2012Ctry[SO2012Ctry$Total > 0,], symbols(log(pop), log(GDP_per_person),circles = sqrt(Total)/36, inche = FALSE)
+>>>>>>> origin/master
 
 with(SO2012Ctry[SO2012Ctry$Total == 0,], points(log(pop), log(GDP_per_person), pch = "."))
 

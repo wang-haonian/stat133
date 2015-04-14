@@ -101,7 +101,11 @@ family.young <- family[family$age<40, ]
 # [2 pts]
 # Create a new data frame 
 # << family.30y68i >> : a data frame, subset of family, with only people *over* 30, *shorter* than 68 in
+<<<<<<< HEAD
 family.30y68i<-family[family$age>30&family$height<68,]
+=======
+
+>>>>>>> origin/master
 # [2 pts]
 # Formula for BMI : BMI = (weight in lbs) / (height in in)^2 * 703
 # Note: the dataframe has weight in lbs and height in in as required.

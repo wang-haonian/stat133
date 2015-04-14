@@ -30,7 +30,10 @@ n <- data.frame(num=1:10, lett=letters[1:10], even=1:10%%2==0)
 
 ## Create a variable [[ p ]] that is a list and whose elements are x, y, z and m from above.
 p <- list(x, y, z, m)
+<<<<<<< HEAD
 p
+=======
+>>>>>>> origin/master
 
 ## Create a variable [[ nmat ]] that is a matrix of size 100 x 100 and whose
 ## elements are drawn from a Normal distribution with mean 6 and sd 2
