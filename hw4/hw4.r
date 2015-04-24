@@ -16,7 +16,8 @@ library(grid)
 
 listLengths <- function(data.list) {
 element.lengths <- sapply(data.list, length)
-  return(element.list)
+#  return(element.list) You returned the wrong variable
+return(element.lengths)
 }
 
 #### Function 2
@@ -82,9 +83,9 @@ recipeConversion <- function(recipe){
   return(recipe)}
 }
 
-a=data.frame(1,"cup","milk")
-colnames(a)=c("amount","unit","ingredient")
-recipeConversion(a)
+#a=data.frame(1,"cup","milk")
+#colnames(a)=c("amount","unit","ingredient")
+#recipeConversion(a)
 #### Function #4a
 # Implement the function "bootstrapVarEst"
 

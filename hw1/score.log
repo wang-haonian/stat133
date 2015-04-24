@@ -13,5 +13,5 @@ INFO:root:(2 points) R('all.equal(family.men, sol$family.men)')[0] is True
 INFO:root:(2 points) R('all.equal(family.young, sol$family.young)')[0] is True
 ERROR:root:(2 points) Checking R('all.equal(family2, sol$family2)')[0]
 ERROR:root:... Expecting: True
-ERROR:root:... But got:   Component 6: Modes: character, numeric
+ERROR:root:... But got:   Component “bmi”: Modes: character, numeric
 INFO:root:You got a 18 out of 20.
