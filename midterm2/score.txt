@@ -1,0 +1,4 @@
+line 103: color by species  -1
+line 110: wrong plot  -2
+
+Score: 30/33
