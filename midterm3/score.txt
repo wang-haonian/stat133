@@ -1,0 +1,19 @@
+Total: 18/20
+
+Function 1
+5/5
+
+Function 2
+5/5
+
+Function 3
+3/5
+
+Some substitutions are made that should not be and some that 
+should be are not made:
+> hisToHer("this is he")
+[1] "ther is he"
+
+Function 4
+
+5/5
