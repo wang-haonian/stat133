@@ -112,7 +112,7 @@ m<- matrix(rnorm(100^2,8),nrow=10,byrow=F)
 # Create [cw1] a subset of ChickWeight with Chicks on 
 # Diet 1 at time 0
 cw1 <- <your code here>
-cw1<- ChickWeight[
+cw1<- ChickWeight$Diet[ChickWeight$time==0]
   
 # [1 pt]
 # Create [cw2] a subset of ChickWeight with only Chicks that
@@ -204,7 +204,9 @@ abline(v=2.1)
 # Please redo the plot, but this time put two plots side by side (hint: before plotting set par(mfrow=...) )
 # The left plot should include only data from 1960, the right one only from 2014.
 par(mfrow=c(1,2))
-plot(WorldBank$life.expectancy[WorldBank$year==1960]~WorldBank$fertility.rate[WorldBank$year==2014])
+plot(WorldBank$life.expectancy[WorldBank$year==1960]~WorldBank$fertility.rate[WorldBank$year==2013],
+    xlab="fertility.rate at 2013", ylab="life.expectancy at 1960", col= WorldBank$region, pch=20
+    ,cex=0.4)
 
 
 
@@ -291,15 +293,18 @@ function <- GenNorm(mean=0, sd=1, n=1000, plot.hist=T){
 ##   <your code here>  
 ## }
 standardizeVar<- function(m, cols.T){
-    if(cols=T){
+  m<-matrix()  
+  if(cols==TRUE){
       for(i in 1:dim(m)[2]){
 m[,1]<- (m[,i]-mean(m[,i]))/sd(m[,i])
       }
     }
      if(cols==F){
-for(i in 1:dim(m)[1]{
-m(,i) <- m(
-eturn(m)
+for(i in 1:dim(m)[1]){
+m(,i) <- (m[i,])-mean(m[i,])/sd(m[i,])
+}
+}
+return(m)
 }
 
 
@@ -369,8 +374,7 @@ set.seed(123456)
 #    increase the counter by 1
 
 
-function <- NumJackpot(k, B){  
-n.jackpot<-seq(0,by=0,length.out=B)
+NumJackpot<- funciton(k, B){  
   for(m in i:B){
     counter<- 0
     lottery.vec<- NULL
