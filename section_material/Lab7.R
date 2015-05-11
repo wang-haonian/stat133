@@ -3,11 +3,14 @@
 #7.1 Using while loop to control maximum iterations:
 #Silly example here: draw one number from 1 to 100 and see if this number matches with our predefined value.
 hit <- function(target){
+   # sample a number from 1:100
   a <- sample(1:100, size=1)
+  # return a list, 1st argument is the sample, second argument is the TRUE or FALSE 
+  # TRUE if sample = target
   return(list(a, a == target))
 }
 
-hit(5)
+hit(2)
 
 sim_hit <- function(target, max.it=200){
   i <- 1 #the counter
