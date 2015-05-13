@@ -62,7 +62,7 @@ x<- 3*seq(1,1200)
 # y[[3]] is 3, 6, 9, ..., 999
 
 # y <- <your code here>
-y<- lapply(1:10
+#y<- lapply(1:10
 
 # [1 pt]
 # Create [z], a logical vector of length 5000 with entries
@@ -90,7 +90,7 @@ set.seed(2718)
 
 w<- paste("a", letters, sep="")
 
-[1 pt]
+#[1 pt]
 # Create [m], a matrix of size 10x10 with entries that are 
 # Normal random variables (hint: rnorm) with mean 8
 # (arrange the values by column, as per default)
@@ -111,7 +111,7 @@ m<- matrix(rnorm(100^2,8),nrow=10,byrow=F)
 # [1 pt]
 # Create [cw1] a subset of ChickWeight with Chicks on 
 # Diet 1 at time 0
-cw1 <- <your code here>
+#cw1 <- <your code here>
 cw1<- ChickWeight$Diet[ChickWeight$time==0]
   
 # [1 pt]
@@ -147,13 +147,13 @@ t1<- with(infants,
 # to mothers with College education (use [ed])
 # 
 # t2 <- <your code here>
-t2<-with(infants[infants$ed=="College",], table(smoke,number
+#t2<-with(infants[infants$ed=="College",], table(smoke,number
 # [2 pts] 
 # Calculate [bdiff], the difference in average birthweight [column bwt] between babies born to mothers
 # that are 35 years or older and mothers that are under 35 years of age [use column age for mothers age]
 #  
 # bdiff <- <your code here>
-bdiff<- mean(infants$bwt[infants$age>34]-infants&bwt[infants$age<35])
+bdiff<- mean(infants$bwt[infants$age>34]-infants$bwt[infants$age<35]) #andy
            
 #################################################################
 #### PART II : Plotting [20 pts]
@@ -181,8 +181,8 @@ abline(fit.mtcars)
 # Color the plotting symbol by [am] (automatic or manual) (any 2 colors)
 # Edit the labels on the x-axis and y-axis to state what the variables are.
 # Hint: first do the plot without adding the colors.
-plot<-(mtcars$disp~mtcars$wt,
-      ylab="displacement in cu.in", xlab="weight of the car")
+#plot<-(mtcars$disp~mtcars$wt,
+#      ylab="displacement in cu.in", xlab="weight of the car")
 points(mtcars[mtcars$am==1,], col=mtcars$am)
 ##### We will now use the World Bank Data [12 pts]
 load("WorldBank.RData")
@@ -269,7 +269,7 @@ lapply(rain, function(x) hist(x))
 #   a vector of n normal random variables with mean=mean and sd=sd
 #   an optional plot
 
-function <- GenNorm(mean=0, sd=1, n=1000, plot.hist=T){
+GenNorm <-function(mean=0, sd=1, n=1000, plot.hist=T){
   x.gen<-rnorm(mean=mean,sd=sd, n=n)
   if(plot.hist==T){
     hist(x.gen)
@@ -374,12 +374,12 @@ set.seed(123456)
 #    increase the counter by 1
 
 
-NumJackpot<- funciton(k, B){  
+NumJackpot<- function(k, B){  
   for(m in i:B){
     counter<- 0
     lottery.vec<- NULL
      win.num<- NULL
-    lottery.vec<- replicate(k, sort(samplt(1:19,3,replace=F)
+    lottery.vec<- replicate(k, sort(samplt(1:19,3,replace=F)))#andy
     lottery<- matrix(lottery.vec, nrow=3, byrow=T)
     win.num<- sort(sample(3:19,3,replace=F))
     for (i in 1:k){
@@ -397,12 +397,12 @@ NumJackpot<- funciton(k, B){
 
 # For B = 50 and each value of k = 100, 500, 1000, 5000
 # Plot a histogram of the output from NumJackpot (i.e. four histograms)
-<your plot here>
+#<your plot here>
 
-hist(NumJackpot, k=100,B=50, main="k=100")
-hist(NumJackpot, k=500, B=50, main="k=500")
-hist(NumJackpot, k=1000, B=50, main="k=1000")
-hist(NumJackpot, k=5000, B=50, main="k=5000")
+#hist(NumJackpot, k=100,B=50, main="k=100")
+#hist(NumJackpot, k=500, B=50, main="k=500")
+#hist(NumJackpot, k=1000, B=50, main="k=1000")
+#hist(NumJackpot, k=5000, B=50, main="k=5000")
 
 
 #################################################################
@@ -427,7 +427,7 @@ text2<- phrases[grep("ar\\>", phrases)]
 # a match to any multiple of "ta"
 #text3 <- <your code here>
 
-text3<- phrases[grep(".+((at){2,}", phrases)]
+#text3<- phrases[grep(".+((at){2,}", phrases)]
 # [2 pts]
 # Create a vector [text4] that has the first 3 characters of each element in phrases
 
