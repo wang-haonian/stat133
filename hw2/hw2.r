@@ -70,8 +70,8 @@ wr.name<-wr1500m$athlete[wr1500m$times==min(wr1500m$times)]
 # Let's look at the relationship between date and time.
 # Q1c. What type of variable (numeric (continuous or discrete), nominal ordinal)
 # are year and times? (no need to save the output, just look at it)
-year:discrete
-times:continuous
+#year:discrete
+#times:continuous
 # When we are examining a variable to see how it changes in time,
 # we typically make a line plot, with time on the x-axes and 
 # the (x,y) values connected with line segments.
@@ -155,6 +155,7 @@ wr.name<-data.frame(wr1500m,times_sec)
 
 # load( your code here )
 load("/Users/wanghaonian/src/stat133/assignments/hw2/SummerOlympics2012Ctry.rda")
+load("SummerOlympics2012Ctry.rda")
 
 #Q6 Take a look at the variables in this data frame.
 # What kind of variable is GDP and population?
@@ -286,7 +287,8 @@ library("RColorBrewer")
 # in the Olympics.
 
 # load( )
-load("/Users/wanghaonian/src/stat133/assignments/hw2/London2012ALL_ATHLETES.rda")
+# load("/Users/wanghaonian/src/stat133/assignments/hw2/London2012ALL_ATHLETES.rda")
+load("London2012ALL_ATHLETES.rda")
 # There is one observation for each athlete. 
 # (Actually, about 20 athletes have two records if they
 # competed in different sporting events. Let's not worry about that.)
