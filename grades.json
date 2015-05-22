@@ -44,6 +44,19 @@
                     "earned": 2
                 }
             }
+        }, 
+        "midterm4": {
+            "note": "", 
+            "hash": "8c792d607071d730b1a18495466427226656fb2d", 
+            "earned": 17, 
+            "possible": 27, 
+            "penalty": 0, 
+            "parts": {
+                "midterm4": {
+                    "possible": 30, 
+                    "earned": 17
+                }
+            }
         }
     }, 
     "login": "wang-haonian", 
