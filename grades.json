@@ -31,17 +31,17 @@
         "hw2": {
             "note": "", 
             "hash": "bd1223825d3574d0c44bad7acfe84bf3b8434743", 
-            "earned": 2, 
+            "earned": 29, 
             "possible": 31, 
             "penalty": 0, 
             "parts": {
                 "hw2_fig": {
                     "possible": 20, 
-                    "earned": 0
+                    "earned": 20
                 }, 
                 "hw2": {
                     "possible": 11, 
-                    "earned": 2
+                    "earned": 9
                 }
             }
         }, 
