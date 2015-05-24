@@ -379,7 +379,7 @@ NumJackpot<- function(k, B){
     counter<- 0
     lottery.vec<- NULL
      win.num<- NULL
-    lottery.vec<- replicate(k, sort(samplt(1:19,3,replace=F)))#andy
+    lottery.vec<- replicate(k, sort(sample(1:19,3,replace=F)))#andy
     lottery<- matrix(lottery.vec, nrow=3, byrow=T)
     win.num<- sort(sample(3:19,3,replace=F))
     for (i in 1:k){
@@ -398,7 +398,7 @@ NumJackpot<- function(k, B){
 # For B = 50 and each value of k = 100, 500, 1000, 5000
 # Plot a histogram of the output from NumJackpot (i.e. four histograms)
 #<your plot here>
-
+## commented out b/c function has errors
 #hist(NumJackpot, k=100,B=50, main="k=100")
 #hist(NumJackpot, k=500, B=50, main="k=500")
 #hist(NumJackpot, k=1000, B=50, main="k=1000")
