@@ -30,18 +30,18 @@
         }, 
         "hw2": {
             "note": "", 
-            "hash": "bd1223825d3574d0c44bad7acfe84bf3b8434743", 
-            "earned": 2, 
+            "hash": "f26e54b1515ba2dbdaf2bae958b4a1e2bf38c8fb", 
+            "earned": 27, 
             "possible": 31, 
             "penalty": 0, 
             "parts": {
                 "hw2_fig": {
                     "possible": 20, 
-                    "earned": 0
+                    "earned": 19
                 }, 
                 "hw2": {
                     "possible": 11, 
-                    "earned": 2
+                    "earned": 8
                 }
             }
         }, 
