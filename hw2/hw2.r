@@ -51,8 +51,12 @@
 # the hw3 directory in the file WR1500MeterMen.rda.
 
 # load the data
+<<<<<<< HEAD
 # load("/Users/wanghaonian/src/stat133/assignments/hw2/WR1500MeterMen.rda")
 load("WR1500MeterMen.rda")
+=======
+load("/Users/wanghaonian/src/stat133/assignments/hw2/WR1500MeterMen.rda")
+>>>>>>> eb017d8c9338261b7c4cba9957b61e0e1463037c
 # The name of the object loaded is wr1500m
 # The time (in the column "times") in these data are recorded in seconds, 
 # and they are seconds over 3 minutes. 
@@ -71,8 +75,13 @@ wr.name<- wr1500m$athlete[wr1500m$times == min(wr1500m$times)]
 # Let's look at the relationship between date and time.
 # Q1c. What type of variable (numeric (continuous or discrete), nominal ordinal)
 # are year and times? (no need to save the output, just look at it)
+<<<<<<< HEAD
 # year:discrete
 # times:continuous
+=======
+year:discrete
+times:continuous
+>>>>>>> eb017d8c9338261b7c4cba9957b61e0e1463037c
 # When we are examining a variable to see how it changes in time,
 # we typically make a line plot, with time on the x-axes and 
 # the (x,y) values connected with line segments.
@@ -158,7 +167,11 @@ plot(wr1500m$new_year, wr1500m$times_sec,  type = "s", xlim = c(min(wr1500m$new_
 lines(x=c(wr_1998, 2014 + 9/12), y = rep(wr1500m$times_sec[51], 2))
 abline(v = wr_1944, col = "black")
 abline(v = wr_1998, col = "black")
+<<<<<<< HEAD
 # points(x = c(wr_1998, 2012+9/12), y = rep(wr1500m$times_sec[wr1500m$new_year == wr_1998], 2),type = "l")
+=======
+points(x = c(wr_1998, 2012+9/12), y = rep(wr1500m$times_sec[wr1500m$new_year == wr_1998], 2),type = "l")
+>>>>>>> eb017d8c9338261b7c4cba9957b61e0e1463037c
 
 text(wr_1944, wr1500m$times_sec[wr1500m$new_year == wr_1944], labels = wr1500m$athlete[wr1500m$new_year == wr_1944], adj = 1, offset = 2, cex = 0.7, col = "blue")
 text(wr_1998, wr1500m$times_sec[wr1500m$new_year == wr_1998], labels = wr1500m$athlete[wr1500m$new_year == wr_1998], adj = 1, offset = 2, cex = 0.7, col = "red")
@@ -177,8 +190,12 @@ text(wr_1998, wr1500m$times_sec[wr1500m$new_year == wr_1998], labels = wr1500m$a
 # It can be loaded into R with
 
 # load( your code here )
+<<<<<<< HEAD
 # load("/Users/wanghaonian/src/stat133/assignments/hw2/SummerOlympics2012Ctry.rda")
 load("SummerOlympics2012Ctry.rda")
+=======
+load("/Users/wanghaonian/src/stat133/assignments/hw2/SummerOlympics2012Ctry.rda")
+>>>>>>> eb017d8c9338261b7c4cba9957b61e0e1463037c
 
 #Q6 Take a look at the variables in this data frame.
 # What kind of variable is GDP and population?
@@ -227,7 +244,15 @@ symbols(log(SO2012Ctry$pop), log(SO2012Ctry$GDP_per_person), circle=sqrt(SO2012C
 # plotting character.
 
 # your plotting code here
+<<<<<<< HEAD
 with(SO2012Ctry[SO2012Ctry$Total > 0,], symbols(log(pop), log(GDP_per_person), circles = sqrt(Total)/36, inches = FALSE))
+=======
+<<<<<<< HEAD
+with(SO2012Ctry[SO2012Ctry$Total > 0,], symbols(log(pop), log(GDP_per_person), circles = sqrt(Total)/36, inche = FALSE)
+=======
+with(SO2012Ctry[SO2012Ctry$Total > 0,], symbols(log(pop), log(GDP_per_person),circles = sqrt(Total)/36, inche = FALSE)
+>>>>>>> origin/master
+>>>>>>> eb017d8c9338261b7c4cba9957b61e0e1463037c
 
 with(SO2012Ctry[SO2012Ctry$Total == 0,], points(log(pop), log(GDP_per_person), pch = "."))
 
@@ -256,7 +281,11 @@ text(log(SO2012Ctry$pop)[top5], log(SO2012Ctry$GDP_per_person)[top5],
 # where the countries are filled with a light grey color.
 
 ## you only need to run these two lines once:
+<<<<<<< HEAD
 # install.packages("maps")
+=======
+install.packages("maps")
+>>>>>>> eb017d8c9338261b7c4cba9957b61e0e1463037c
 library("maps")
 
 # world <- map( your code here )
@@ -291,7 +320,11 @@ symbols(wonMedal$longitude, wonMedal$latitude, circles = sqrt(wonMedal$Total)/2,
 # e.g. myColor = "#FEB24CAA" or   "#FEB24C88"
 
 # You only need to call these two lines once:
+<<<<<<< HEAD
 # install.packages("RColorBrewer")
+=======
+install.packages("RColorBrewer")
+>>>>>>> eb017d8c9338261b7c4cba9957b61e0e1463037c
 library("RColorBrewer")
 
 # display.brewer.all( your code here )
@@ -321,11 +354,16 @@ symbols(wonMedal$longitude, wonMedal$latitude,
 # in the Olympics.
 
 # load( )
+<<<<<<< HEAD
 # load("/Users/wanghaonian/src/stat133/assignments/hw2/London2012ALL_ATHLETES.rda")
 load("London2012ALL_ATHLETES.rda")
 
 
                                         # There is one observation for each athlete. 
+=======
+load("/Users/wanghaonian/src/stat133/assignments/hw2/London2012ALL_ATHLETES.rda")
+# There is one observation for each athlete. 
+>>>>>>> eb017d8c9338261b7c4cba9957b61e0e1463037c
 # (Actually, about 20 athletes have two records if they
 # competed in different sporting events. Let's not worry about that.)
 
